@@ -22,22 +22,76 @@
     {% include mathjax.html %}
   </head>
   <body>
-    <ul class="w3-navbar w3-green" style="padding:0">
-  <li><a href="/"> <i class="fa fa-home"></i></a></li>
-  <li><a href="/help/">Help</a></li>
-  <li><a href="/meetings/">Meetings</a></li>
-  <li><a href="/hw/">Homework</a></li>
-  <li class="w3-dropdown-hover w3-hover-blue">
-  <a class="w3-hover-blue" href="#">Individual Pages <i class="fa fa-caret-down"></i></a>
-  <div class="w3-dropdown-content w3-white w3-card-4">
-    <a href="/bennett/">Bennett</a>
-    <a href="/max/">Max</a>
-    <a href="/michael/">Michael</a>
-    <a href="/ryanc/">Ryan C.</a>
-    <a href="/ryanh/">Ryan H.</a>
-    <a href="/coach/">Coaches</a>
+    <script>
+function mobileMenu() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {  
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+    <div class="w3-bar w3-blue" style="padding:0">
+      <div class="w3-dropdown-click w3-hide-medium w3-hide-large">
+        <button onclick="mobileMenu()" class="w3-button w3-black"><i class="fa fa-bars"></i></button>
+  <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+   
+    
+  <a href="/help/" class="w3-bar-item w3-button w3-blue w3-hover-green  ">Help</a>
+  <a href="/meetings/" class="w3-bar-item w3-button w3-blue w3-hover-green ">Meetings</a>
+        <a href="/hw/" class="w3-bar-item w3-button w3-blue w3-hover-green  ">Homework</a>
+        <a href="/hw/" class="w3-bar-item w3-button w3-blue w3-hover-green ">HW</a>
+      <a href="/bennett/" class="w3-bar-item w3-button w3-blue w3-hover-green">Bennett</a>
+      <a href="/max/" class="w3-bar-item w3-button w3-blue w3-hover-green">Max</a>
+      <a href="/michael/" class="w3-bar-item w3-button w3-blue w3-hover-green">Michael</a>
+      <a href="/ryanc/" class="w3-bar-item w3-button w3-blue w3-hover-green">Ryan C </a>
+      <a href="/ryanh/" class="w3-bar-item w3-button w3-blue w3-hover-green">Ryan H </a>
+      <a href="/coach/" class="w3-bar-item w3-button w3-blue w3-hover-green">Coaches Sandbox</a>
+    
   </div>
-</li>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="/" class="w3-bar-item w3-button w3-blue w3-hover-green "><i class="fa fa-home"> </i></a>
+  <a href="/help/" class="w3-bar-item w3-button w3-blue w3-hover-green  w3-hide-small">Help</a>
+  <a href="/meetings/" class="w3-bar-item w3-button w3-blue w3-hover-green  w3-hide-small">Meetings</a>
+        <a href="/hw/" class="w3-bar-item w3-button w3-blue w3-hover-green  w3-hide-small w3-hide-medium">Homework</a>
+        <a href="/hw/" class="w3-bar-item w3-button w3-blue w3-hover-green  w3-hide-large w3-hide-small">HW</a>
+   <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
+     <button class="w3-button">Individual Pages <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/bennett/" class="w3-bar-item w3-button">Bennett</a>
+      <a href="/max/" class="w3-bar-item w3-button">Max</a>
+      <a href="/michael/" class="w3-bar-item w3-button">Michael</a>
+      <a href="/ryanc/" class="w3-bar-item w3-button">Ryan C </a>
+      <a href="/ryanh/" class="w3-bar-item w3-button">Ryan H </a>
+      <a href="/coach/" class="w3-bar-item w3-button">Coaches/a>
+    </div>
+  </div>
+        <div class="w3-dropdown-hover w3-hide-small w3-hide-large">
+     <button class="w3-button">Team <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/bennett/" class="w3-bar-item w3-button">Bennett</a>
+      <a href="/max/" class="w3-bar-item w3-button">Max</a>
+      <a href="/michael/" class="w3-bar-item w3-button">Michael</a>
+      <a href="/ryanc/" class="w3-bar-item w3-button">Ryan C </a>
+      <a href="/ryanh/" class="w3-bar-item w3-button">Ryan H </a>
+      <a href="/coach/" class="w3-bar-item w3-button">Coaches/a>
+    </div>
+  </div>
+</div>
+
 
 </ul>
     {{ content }}
